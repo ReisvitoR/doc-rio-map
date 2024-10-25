@@ -1,0 +1,87 @@
+/* Corpo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo clara */
+}
+
+/* Estilizando a barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #ffffff; /* Cor preta */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px; /* Bordas arredondadas */
+    margin: 10px; /* Espaço ao redor da barra lateral */
+    border: 5px solid white; /* Borda branca */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.sidebar-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    background-color: #000; /* Cor preta */
+    border: 1px solid #fff; /* Borda branca */
+    border-radius: 10px; /* Bordas arredondadas nos botões */
+}
+
+.sidebar-menu li a.active {
+    background-color: #007bff; /* Cor azul para itens ativos */
+}
+
+.sidebar-menu li a:hover {
+    background-color: #444; /* Efeito hover */
+}
+
+/* Seção de slogan */
+.slogan {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slogan img {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilizando o contêiner do mapa */
+#map {
+    flex-grow: 1;
+    height: 100%;
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    border: 5px solid white; /* Margem branca ao redor do mapa */
+}
+
+/* Adicionando espaço entre a barra lateral e o mapa */
+#map-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Fundo mais claro fora do mapa */
+}
